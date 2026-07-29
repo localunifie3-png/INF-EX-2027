@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>INF-EX-2027</title>
+<title>Fiche Technique - Examen</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,132 +16,131 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
 
-background:#eef3f8;
-
-display:flex;
-
-justify-content:center;
-
-padding:50px;
+background:linear-gradient(135deg,#f3f6fb,#dde7f7);
+padding:40px;
 
 }
 
-.card{
+.container{
 
-width:800px;
-
+max-width:900px;
+margin:auto;
 background:white;
-
-border-radius:20px;
-
-box-shadow:0 20px 45px rgba(0,0,0,.12);
-
+border-radius:18px;
 overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
 
 }
 
 .header{
 
-background:linear-gradient(135deg,#0057b8,#2d9cff);
-
+background:linear-gradient(90deg,#0052D4,#4364F7,#6FB1FC);
 color:white;
-
-padding:40px;
-
+padding:35px;
 text-align:center;
 
 }
 
 .header h1{
 
-font-size:42px;
-
-letter-spacing:3px;
+font-size:38px;
+margin-bottom:10px;
 
 }
 
 .header p{
 
-margin-top:10px;
-
 font-size:18px;
+opacity:.95;
 
-opacity:.9;
+}
+
+.section{
+
+padding:35px;
 
 }
 
 .info{
 
-padding:40px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 
 }
 
-.item{
-
-display:flex;
-
-align-items:center;
-
-padding:18px;
-
-margin-bottom:14px;
+.card{
 
 background:#f7f9fc;
-
-border-left:6px solid #007bff;
-
-border-radius:12px;
-
+border-left:6px solid #0052D4;
+padding:18px;
+border-radius:10px;
 transition:.3s;
 
 }
 
-.item:hover{
+.card:hover{
 
-transform:translateX(8px);
-
-background:#eef6ff;
-
-}
-
-.icon{
-
-font-size:28px;
-
-margin-right:20px;
+transform:translateY(-4px);
+box-shadow:0 10px 20px rgba(0,0,0,.08);
 
 }
 
-.text{
+.card h3{
+
+color:#0052D4;
+font-size:15px;
+margin-bottom:8px;
+
+}
+
+.card p{
 
 font-size:18px;
-
-}
-
-.label{
-
-font-weight:700;
-
-color:#0057b8;
+font-weight:600;
 
 }
 
 .footer{
 
-background:#f7f9fc;
-
+background:#f2f2f2;
 text-align:center;
+padding:25px;
+font-size:15px;
+color:#555;
 
-padding:20px;
+}
 
-font-size:14px;
+.badge{
 
-color:#666;
+display:inline-block;
+padding:8px 20px;
+background:#1abc9c;
+color:white;
+border-radius:50px;
+font-weight:bold;
+margin-top:20px;
+
+}
+
+@media(max-width:700px){
+
+.info{
+
+grid-template-columns:1fr;
+
+}
+
+.header h1{
+
+font-size:30px;
+
+}
 
 }
 
@@ -149,68 +150,85 @@ color:#666;
 
 <body>
 
-<div class="card">
+<div class="container">
 
 <div class="header">
 
-<h1>INF-EX-2027</h1>
+<h1>EXAMEN LOCAL UNIFIÉ</h1>
 
-<p>Local Unified Examination</p>
+<p>Fiche Technique Officielle</p>
+
+<div class="badge">
+Document Officiel
+</div>
 
 </div>
+
+<div class="section">
 
 <div class="info">
 
-<div class="item">
-<div class="icon">📄</div>
-<div class="text"><span class="label">Code :</span> INF-ELU-3AC-2027-001</div>
+<div class="card">
+<h3>Code</h3>
+<p>INF-ELU-3AC-2027-001</p>
 </div>
 
-<div class="item">
-<div class="icon">💻</div>
-<div class="text"><span class="label">Subject :</span> Informatique</div>
+<div class="card">
+<h3>Matière</h3>
+<p>Informatique</p>
 </div>
 
-<div class="item">
-<div class="icon">🎓</div>
-<div class="text"><span class="label">Level :</span> 3ème Année Collégiale</div>
+<div class="card">
+<h3>Niveau</h3>
+<p>3ème Année Collégiale</p>
 </div>
 
-<div class="item">
-<div class="icon">⏱️</div>
-<div class="text"><span class="label">Duration :</span> 1 Heure</div>
+<div class="card">
+<h3>Durée</h3>
+<p>1 Heure</p>
 </div>
 
-<div class="item">
-<div class="icon">📅</div>
-<div class="text"><span class="label">School Year :</span> 2026-2027</div>
+<div class="card">
+<h3>Année scolaire</h3>
+<p>2026-2027</p>
 </div>
 
-<div class="item">
-<div class="icon">📊</div>
-<div class="text"><span class="label">Version :</span> V1.0</div>
+<div class="card">
+<h3>Version</h3>
+<p>V1.0</p>
 </div>
 
-<div class="item">
-<div class="icon">📚</div>
-<div class="text"><span class="label">Reference :</span> CR-INF-2027</div>
+<div class="card">
+<h3>Référence</h3>
+<p>CR-INF-2027</p>
 </div>
 
-<div class="item">
-<div class="icon">👤</div>
-<div class="text"><span class="label">Designer :</span> Unknown</div>
+<div class="card">
+<h3>Concepteur</h3>
+<p>Unknown</p>
 </div>
 
-<div class="item">
-<div class="icon">✅</div>
-<div class="text"><span class="label">Status :</span> Official Document</div>
+<div class="card">
+<h3>Édition</h3>
+<p>Juillet 2027</p>
+</div>
+
+<div class="card">
+<h3>Statut</h3>
+<p>Document Officiel</p>
+</div>
+
 </div>
 
 </div>
 
 <div class="footer">
 
-© 2027 Examination Information
+© 2027 — Examen Local Unifié
+
+<br><br>
+
+Académie Régionale de l'Éducation et de la Formation
 
 </div>
 
